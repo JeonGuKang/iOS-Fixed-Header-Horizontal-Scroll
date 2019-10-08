@@ -15,6 +15,8 @@
 		C6E79127234C2D7F0047F2DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E79125234C2D7F0047F2DF /* LaunchScreen.storyboard */; };
 		C6E79132234C2D7F0047F2DF /* FixedHeaderHorizontalScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E79131234C2D7F0047F2DF /* FixedHeaderHorizontalScrollTests.swift */; };
 		C6E7913D234C2D7F0047F2DF /* FixedHeaderHorizontalScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7913C234C2D7F0047F2DF /* FixedHeaderHorizontalScrollUITests.swift */; };
+		C6E7914B234C349F0047F2DF /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7914A234C349F0047F2DF /* MyCollectionViewCell.swift */; };
+		C6E7914D234C6B8C0047F2DF /* CustomScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7914C234C6B8C0047F2DF /* CustomScrollDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C6E79138234C2D7F0047F2DF /* FixedHeaderHorizontalScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixedHeaderHorizontalScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E7913C234C2D7F0047F2DF /* FixedHeaderHorizontalScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedHeaderHorizontalScrollUITests.swift; sourceTree = "<group>"; };
 		C6E7913E234C2D7F0047F2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E7914A234C349F0047F2DF /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C6E7914C234C6B8C0047F2DF /* CustomScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				C6E79125234C2D7F0047F2DF /* LaunchScreen.storyboard */,
 				C6E79128234C2D7F0047F2DF /* Info.plist */,
 				C6E79120234C2D7D0047F2DF /* FixedHeaderHorizontalScroll.xcdatamodeld */,
+				C6E7914A234C349F0047F2DF /* MyCollectionViewCell.swift */,
+				C6E7914C234C6B8C0047F2DF /* CustomScrollDelegate.swift */,
 			);
 			path = FixedHeaderHorizontalScroll;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E7911C234C2D7D0047F2DF /* ViewController.swift in Sources */,
+				C6E7914D234C6B8C0047F2DF /* CustomScrollDelegate.swift in Sources */,
 				C6E7911A234C2D7D0047F2DF /* AppDelegate.swift in Sources */,
+				C6E7914B234C349F0047F2DF /* MyCollectionViewCell.swift in Sources */,
 				C6E79122234C2D7D0047F2DF /* FixedHeaderHorizontalScroll.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
