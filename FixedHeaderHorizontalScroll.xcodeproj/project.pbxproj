@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C68EF62C234F379E00484CB7 /* iosFixheader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C68EF62B234F379E00484CB7 /* iosFixheader.gif */; };
 		C6E7911A234C2D7D0047F2DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E79119234C2D7D0047F2DF /* AppDelegate.swift */; };
 		C6E7911C234C2D7D0047F2DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7911B234C2D7D0047F2DF /* ViewController.swift */; };
 		C6E7911F234C2D7D0047F2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E7911D234C2D7D0047F2DF /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C68EF62B234F379E00484CB7 /* iosFixheader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iosFixheader.gif; sourceTree = "<group>"; };
 		C6E79116234C2D7D0047F2DF /* FixedHeaderHorizontalScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixedHeaderHorizontalScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E79119234C2D7D0047F2DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E7911B234C2D7D0047F2DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		C6E7910D234C2D7C0047F2DF = {
 			isa = PBXGroup;
 			children = (
+				C68EF62B234F379E00484CB7 /* iosFixheader.gif */,
 				C6E79118234C2D7D0047F2DF /* FixedHeaderHorizontalScroll */,
 				C6E79130234C2D7F0047F2DF /* FixedHeaderHorizontalScrollTests */,
 				C6E7913B234C2D7F0047F2DF /* FixedHeaderHorizontalScrollUITests */,
@@ -241,6 +244,7 @@
 				C6E79127234C2D7F0047F2DF /* LaunchScreen.storyboard in Resources */,
 				C6E79124234C2D7F0047F2DF /* Assets.xcassets in Resources */,
 				C6E7911F234C2D7D0047F2DF /* Main.storyboard in Resources */,
+				C68EF62C234F379E00484CB7 /* iosFixheader.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
