@@ -190,6 +190,7 @@
                                         </view>
                                         <viewLayoutGuide key="safeArea" id="gcM-Vx-Gow"/>
                                         <connections>
+                                            <outlet property="label" destination="NLg-hu-nE7" id="x97-pc-Mnm"/>
                                             <outlet property="scrollView" destination="NTS-4v-kKO" id="lHl-k1-I9d"/>
                                         </connections>
                                     </collectionViewCell>

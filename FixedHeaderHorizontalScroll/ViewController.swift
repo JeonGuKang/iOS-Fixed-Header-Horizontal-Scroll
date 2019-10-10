@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,CustomScrollDelegate  {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, CustomScrollDelegate  {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     let reuseIdentifier = "myCell"
     var items = Array(1...100)
     var position : CGFloat = 0.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +31,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             self.position = position
         }
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MyCollectionViewCell
         cell.initScrollListener()
         cell.scrollDelegate = self
-        cell.moveScrollPosition(to: self.position)
+        cell.moveScrollPosition(to: self.position, indexPath.row)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        (cell as! MyCollectionViewCell).moveScrollPosition(to: self.position, indexPath.row)
+    }
+    
 }
 

@@ -12,8 +12,9 @@ import UIKit
 class MyCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var label: UILabel!
     weak var scrollDelegate: CustomScrollDelegate?
-    
+   
     func initScrollListener() {
         scrollView.delegate = self
     }
@@ -22,10 +23,13 @@ class MyCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
         scrollDelegate?.didScroll(to: scrollView.contentOffset.x)
     }
     
-    func moveScrollPosition(to position: CGFloat) {
+    func moveScrollPosition(to position: CGFloat,_ index: Int) {
+        scrollView.delegate = nil
+        label.text = "제목 \(index)"
         DispatchQueue.main.async() {
-            UIView.animate(withDuration: 0, delay: 0, options: UIView.AnimationOptions.curveLinear, animations: {
+            UIView.animate(withDuration: 0, delay: 0, options: [], animations: {
                 self.scrollView.contentOffset.x = position
+                self.scrollView.delegate = self
             }, completion: nil)
         }
     }
