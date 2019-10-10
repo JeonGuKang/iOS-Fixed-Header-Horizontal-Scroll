@@ -1,4 +1,9 @@
-# iOS-Fixed-Header-Horizontal-Scroll
+# iOS fixed header and horizontal UIScrollView in UICollectionView
+
+
+
+
+
 
 
 
